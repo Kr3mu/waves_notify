@@ -74,7 +74,6 @@ function addNotify(text, time) {
                                     'top': LastNotify.top + 'vh'
                                 }, 400, () => {
                                     notifications[num].top = LastNotify.top
-                                    console.log(num==notifications.length-1)
                                     if (num==notifications.length-1) {
                                         $(`.notification-${number}`).remove();
                                         notifications.splice(findIndex(number), 1);
