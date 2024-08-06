@@ -12,23 +12,27 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .notify-container {
-    position: absolute;
-    top: 100vh;
+    position: relative;
     width: 20%;
     height: fit-content;
+    /* bottom: 0; */
     background-color: #dfecf4;
     color: #545758;
     border-radius: 20px;
+    margin-block: 0.7vh;
+    transform: translateY(100vh);
+    transition: all linear 0.3s;
+
 }
 
 .notify-title {
     display: flex;
     justify-content: space-between;
-    /* padding: 0; */
 }
 
 

@@ -1,9 +1,10 @@
 
 
-addNotify = function(text)
+addNotify = function(text, time)
     SendNUIMessage({
         action = 'addNotify',
-        text = text
+        text = text,
+        time = time
     })
 end
 
